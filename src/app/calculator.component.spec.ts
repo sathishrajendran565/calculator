@@ -1,8 +1,7 @@
 import { TestBed, async, ComponentFixture } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
-import { AppComponent } from "./app.component";
+import { AppComponent } from "./calculator.component";
 import { FormsModule } from "@angular/forms";
-import { DebugElement, asNativeElements } from "@angular/core";
 import { By } from "@angular/platform-browser";
 
 describe("AppComponent", () => {
