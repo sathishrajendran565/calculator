@@ -1,0 +1,90 @@
+$font_family: Arial, Helvetica, sans-serif;
+$background_color_1: white;
+$background_color_2: lightskyblue;
+$background_color_3: lightpink;
+$border_color_1: black;
+
+body {
+	margin: 0;
+	font-family: $font_family;
+}
+.header {
+	text-align: center;
+	padding: 32px;
+}
+.flex-container {
+	display: flex;
+	background-color: $background_color_1;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-color: $border_color_1;
+	>div.value-field {
+		background-color: $background_color_2;
+		width: 200px;
+		margin: 10px;
+		text-align: center;
+		line-height: 150px;
+		font-size: 12px;
+		border: 1px solid black;
+		>input {
+			width: 80px;
+			vertical-align: middle;
+			line-height: 10px;
+			border: 1px solid black;
+			&:focus {
+				border: 2px solid darkgoldenrod;
+			}
+		}
+	}
+	>div {
+		>label {
+			width: 80px;
+			text-align: center;
+			line-height: 10px;
+			font-weight: bold;
+			font-family: $font_family;
+		}
+	}
+	>div.radio {
+		background-color: $background_color_3;
+		width: 200px;
+		margin: 10px;
+		text-align: center;
+		line-height: 35px;
+		font-size: 12px;
+		font-weight: bold;
+		font-family: $font_family;
+		border: 1px solid black;
+		>.sum-radio {
+			margin-top: 50px;
+			margin-left: 2px;
+			margin-bottom: 0px;			
+		}
+		>label {
+			width: 70px;			
+			font-weight: bold;
+			font-family: $font_family;			
+			margin-top: 30px;
+		}
+		>span {
+			>label.sum-radio {
+				margin-top: 30px;
+				margin-bottom: 0px;
+			}
+			>label.multiply-radio {
+				margin-left: 1px;
+			}
+			>input.multiply-radio {
+				margin-left: 16px;
+			}
+		}
+		>label.result {
+			margin-left: 10px;
+			margin-top: 15px;
+		}
+	}
+}
